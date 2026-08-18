@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap');
+
+:root {
+  --wf-green-dark: #10331D;
+  --wf-green-primary: #184D28;
+  --wf-green-light: #256B3A;
+  --wf-cream: #FAF7EE;
+  --wf-cream-card: #FFFFFF;
+  --wf-sage: #EDF4EE;
+  --wf-gold: #E5A93C;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  background-color: var(--wf-cream);
+  color: #1F2937;
+  background-image: 
+    radial-gradient(at 10% 15%, rgba(24, 77, 40, 0.05) 0px, transparent 50%),
+    radial-gradient(at 90% 85%, rgba(229, 169, 60, 0.07) 0px, transparent 50%);
+  min-height: 100vh;
+}
+
+.font-serif-title {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Polished Card Hover Effects */
+.card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 30px -10px rgba(16, 51, 29, 0.12);
+}
+
+/* Custom interactive buttons */
+.btn-press {
+  transition: all 0.15s ease;
+}
+
+.btn-press:active {
+  transform: scale(0.97);
+}
+
+/* Subtle glassmorphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
